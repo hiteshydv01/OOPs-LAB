@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+class sample{
+    int a;
+    void read (void){
+        cout<<"Enter the number:",cin>>a;
+    }
+    public:
+    void update(void);
+    void write (void);
+};
+void sample:: update(){
+    read();
+    a=2*a;
+}
+void sample :: write(){
+    cout<<a<<endl;
+}
+int main(){
+    sample obj1;
+    obj1.update();
+    obj1.write();
+    return 0;
+}
